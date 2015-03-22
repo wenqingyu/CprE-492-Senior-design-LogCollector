@@ -26,6 +26,11 @@ ex: include_once '/var/www/yourProject/LogCollector/library/FileLog.php';
   - Send log
       $fireLog->sendLog();
       
-  For detail, you can check demo.php file    
+  For detail, you can check demo.php and applicationDemo.php file    
+
+
+Notice: Remember, always check user's auth, you cannot take any action on files unless you already know who is currently in page, so do FileLog. Because you cannot generate a log without user's id.
+
+
   
  

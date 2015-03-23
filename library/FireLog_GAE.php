@@ -87,10 +87,12 @@ class FireLog{
 
 
 		$this->data = http_build_query($this->data);
+		print_r($this->data);
+		echo "start1";
 	    $context =
 		array("http"=>
 		  array(
-		    "method" => "post",
+		    "method" => "POST",
 		    'header' => "Content-Type: application/x-www-form-urlencoded\r\n",
 		    "content" => $this->data
 		  )

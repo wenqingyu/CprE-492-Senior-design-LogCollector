@@ -96,7 +96,7 @@ class FireLog{
 		  )
 		);
 		$context = stream_context_create($context);
-		$result = file_get_contents(url, false, $context);
+		$result = file_get_contents($LOG_API_URL, false, $context);
 		echo $result;
 		
 		// TODO: CLEAN UP ALL THE CUSOMIZED DATA

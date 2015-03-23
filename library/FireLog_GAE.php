@@ -86,7 +86,7 @@ class FireLog{
 
 
 
-
+		$this->data = http_build_query($this->data);
 	    $context =
 		array("http"=>
 		  array(

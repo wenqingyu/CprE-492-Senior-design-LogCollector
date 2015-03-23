@@ -91,13 +91,14 @@ class FireLog{
 		array("http"=>
 		  array(
 		    "method" => "post",
-		    "header" => 'Content-Type: text/html; charset=utf-8'. "\r\n",
+		    'header' => "Content-Type: application/x-www-form-urlencoded\r\n",
 		    "content" => $this->data
 		  )
 		);
 		$context = stream_context_create($context);
 		$result = file_get_contents($LOG_API_URL, false, $context);
 		echo $result;
+		echo "ended";
 		
 		// TODO: CLEAN UP ALL THE CUSOMIZED DATA
 		

@@ -91,7 +91,7 @@ class FireLog{
 		array("http"=>
 		  array(
 		    "method" => "post",
-		    "header" => 'Content-Type: application/json'. "\r\n",
+		    "header" => 'Content-Type: text/html; charset=utf-8'. "\r\n",
 		    "content" => $this->data
 		  )
 		);

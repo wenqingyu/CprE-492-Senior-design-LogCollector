@@ -91,7 +91,7 @@ class FireLog{
 		array("http"=>
 		  array(
 		    "method" => "post",
-		    // "header" => "Authorization: Basic " . base64_encode($username.':'.$password) . "\r\n",
+		    "header" => 'Content-Type: application/json'. "\r\n",
 		    "content" => $this->data
 		  )
 		);
